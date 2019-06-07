@@ -1,0 +1,66 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Script</title>
+
+<script>
+    window.alert('JAVASCRIPT/NESTED IF STATEMENT');
+
+    var school = 'AIT';
+    var campus = 'SEAVIEW';
+    var program = 'COMPUTER SCIENCE';
+    var level = 'LEVEL 2';
+    var name = 'STUDENT';
+/*
+        if (school == 'AIT'){
+            if(campus == 'SEAVIEW'){
+                if (program == 'COMPUTER SCIENCE'){
+                    if (level == 'LEVEL 2'){
+                        if (name == 'STUDENT'){
+                            document.write('Welcome to AIT');
+                        } else {
+                            document.write('wrong name');
+                        }
+                    } else {
+                        document.write('sorry your level is wrong');
+                    }
+                } else {
+                    document.write('sorry you choosed a wrong program');
+                }
+
+            } else {
+                document.write('sorry you choosed the wrong campus');
+            }
+
+        } else {
+            document.write('sorry you choosed a wrong school');
+        }*/
+    document.write('<br>');
+    switch (school){
+        case 'seaview': document.write('this is the campus');
+            break;
+        case 'computer science': document.write('this is the program');
+            break;
+        case 'AIT': document.write('this is the school AIT');
+            break;
+        default: document.write('wrong choice');
+    }
+
+      document.write('<br>');
+
+    for ( x = 0; x < 4; x++){
+        document.write(x+'. THIS IS COOL<br>');
+    }
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+     <header></header>
+
+</body>
+</html>
