@@ -1,0 +1,46 @@
+* {
+    padding: 0px;
+    margin:0px;
+    font-family: cursive;
+}
+
+.navbar-brand{
+    padding: 30px;
+    font-weight: 500;
+}
+.navbar-toggler {
+    outline: none!important;
+    margin-right: 30px;
+}
+
+.ma-100{
+    background-color: lightgray;
+}
+ .col1{
+    padding: 0px;
+}
+.col1 img{
+     width: 100%;
+    height:fit-content; 
+
+}
+.col2{
+    padding: 35px;
+}
+.col2 h3{
+    font-size: 400;
+}
+.col2 h1{
+    font-size:50px;
+    font-weight: 900;
+    color:orangered;
+}
+.col2 p{
+    font-weight: 400;
+}
+.col2 button{
+    border-radius: 0%;
+    padding: 7px;
+    width: 40%;
+    height: 50px;
+} 
