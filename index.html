@@ -63,52 +63,60 @@
       <br>
      <div class="container-fluid ma-100">
             <div class="container">
-
-                    <!-- <div class="row">
-                      <div class="col-7">
-                          <div class="col1">
-                        <img src="img/ggg-min.png">
-                      </div></div>
-                      <div class="col-5">
-                          <div class="col2">
-                        <h3>About Us</h3>
-                        <h1>Architecture, Engineering & Design Firm</h1>
-                        <p>we are the authority for construction projects in environmental sensitive surroundings.</p>
-                        <br><button class="btn btn-primary">Read More</button>
-                      </div></div>
-                    </div> -->
-                    <!-- <div class="row">
-                        <div class="col">
-                            <div class="col1-2">
-                                <div class="">
-                                    
-                                </div>
-                            </div>
-                         
-                        </div>
-                        <div class="col bg-primary">
-                            <div class="col2-2">
-                                1 of 3
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="col3">
-                                1 of 3
-                            </div>
-                        </div>
-
-                  </div> -->
+                
+               
             </div>
      
 </div>
 
+<div class="container summ">
+    <textarea id="summary1" rows="6" cols="50" oninput="countWordsAndUpdateFeedback(1)"></textarea>
+  <div id="wordCountFeedback1"></div>
+
+  <textarea id="summary2" rows="6" cols="50" oninput="countWordsAndUpdateFeedback(2)"></textarea>
+  <div id="wordCountFeedback2"></div>
+  
+</div>
+
+    <script >
+const minWordCount = 30;
+const maxWordCount = 10000;
+
+function countWords(summary) {
+  const words = summary.trim().split(/\s+/);
+  return words.length;
+}
+
+function countWordsAndUpdateFeedback(textareaNumber) {
+  const textarea = document.getElementById(`summary${textareaNumber}`);
+  const wordCount = countWords(textarea.value);
+
+  const feedbackElement = document.getElementById(`wordCountFeedback${textareaNumber}`);
+  feedbackElement.textContent = `Word count: ${wordCount}`;
+
+  if (textareaNumber === 1) {
+    if (wordCount < minWordCount) {
+      feedbackElement.style.color = "red";
+    } else if (wordCount > maxWordCount) {
+      feedbackElement.style.color = "red";
+      feedbackElement.textContent += " (Word count exceeds 10,000!)";
+      const words = textarea.value.trim().split(/\s+/).slice(0, maxWordCount);
+      textarea.value = words.join(" ");
+    } else {
+      feedbackElement.style.color = "black";
+    }
+  }
+}
+
+// Optional: Set initial word count feedback when the page loads
+window.addEventListener("DOMContentLoaded", () => {
+  countWordsAndUpdateFeedback(1);
+  countWordsAndUpdateFeedback(2);
+});
 
 
-
-
-
-
-
-    <script type="javascript" src="js/--"></script>
+    </script>
+	
+	
 </body>
 </html>
