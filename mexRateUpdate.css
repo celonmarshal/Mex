@@ -15,7 +15,15 @@ body{
 	height: 100vh;
 	animation: animate 15s ease infinite;
 }
-
+a{
+	
+	font-weight: 900;
+	
+}
+p a:hover{
+	text-decoration: none;
+	color:var(--color)
+}
 .rateUpdate{
     margin:50px auto;
     max-width: 800px;
