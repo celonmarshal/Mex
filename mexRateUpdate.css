@@ -22,7 +22,7 @@ a{
 }
 p a:hover{
 	text-decoration: none;
-	color:var(--color)
+	color:var(--color);
 }
 .rateUpdate{
     margin:50px auto;
