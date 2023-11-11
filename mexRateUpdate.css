@@ -24,6 +24,11 @@ p a:hover{
 	text-decoration: none;
 	color:var(--color);
 }
+
+.b{
+	font-weight: 500;
+	font-family: cursive;
+}
 .rateUpdate{
     margin:50px auto;
     max-width: 800px;
