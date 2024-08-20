@@ -1,15 +1,17 @@
-		//code to disable right-click
-		document.addEventListener('contextmenu', event => event.preventDefault());
-		document.addEventListener('keydown', function(event) {
-			if (event.keyCode == 123 || // F12
-				(event.ctrlKey && event.shiftKey && event.keyCode == 73)) { // Ctrl+Shift+I
-				event.preventDefault();
-			}
-		});
-        
-		
+
+   const d = new Date("2024-8-20");
+    document.getElementById("demo").innerHTML = d;
+
+        //code to disable right-click
+		// document.addEventListener('contextmenu', event => event.preventDefault());
+		// document.addEventListener('keydown', function(event) {
+		// 	if (event.keyCode == 123 || // F12
+		// 		(event.ctrlKey && event.shiftKey && event.keyCode == 73)) { // Ctrl+Shift+I
+		// 		event.preventDefault();
+		// 	}
+		// });
+
 		//  exchange rates conversion
-     
 		const exchangeRates = {
             "NGN": { "NGN": 1, "GHS":0.0098 },
             "GHS": { "GHS": 1, "NGN": 96.0},
@@ -28,6 +30,6 @@
             const rate = exchangeRates[fromCurrency][toCurrency];
             const convertedValue = amount * rate;
             document.getElementById('result').innerText = 
-                `Converted Value: ${convertedValue.toFixed(2)} ${toCurrency}`;
+                `You will receive: ${convertedValue.toFixed(2)} ${toCurrency}`;
         }
     
