@@ -1,5 +1,5 @@
 
-   const d = new Date("2024-8-22");
+   const d = new Date("2024-8-23");
     document.getElementById("demo").innerHTML = d;
 
         // code to disable right-click
