@@ -14,7 +14,7 @@
 		//  exchange rates conversion
 		const exchangeRates = {
             "NGN": { "NGN": 1, "GHS":0.00985 },
-            "GHS": { "GHS": 1, "NGN": 95.69},
+            "GHS": { "GHS": 1, "NGN": 95.0},
         };
 
         function convert() {
