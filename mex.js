@@ -11,7 +11,7 @@
 			}
 		});
 
-		//  exchange rates conversionssss
+		//  exchange rates conversions
 		const exchangeRates = {
             "NGN": { "NGN": 1, "GHS":0.0099 },
             "GHS": { "GHS": 1, "NGN": 95.0},
