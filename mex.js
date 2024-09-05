@@ -1,5 +1,5 @@
 
-   const d = new Date("2024-9-4");
+   const d = new Date("2024-9-5");
     document.getElementById("demo").innerHTML = d;
 
         // code to disable right-click
@@ -13,8 +13,8 @@
 
 		//  exchange rates conversions
 		const exchangeRates = {
-            "NGN": { "NGN": 1, "GHS":0.0099 },
-            "GHS": { "GHS": 1, "NGN": 95.0},
+            "NGN": { "NGN": 1, "GHS":0.0097 },
+            "GHS": { "GHS": 1, "NGN": 97.0},
         };
 
         function convert() {
