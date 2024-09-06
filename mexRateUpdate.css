@@ -39,23 +39,24 @@ p a:hover{
 
 }
 
-#fromCurrency{
+input:focus {
+	outline: none;
+	box-shadow: none;
+  font-weight: 500;
+}
+input{
+  font-weight: 500;
+}
+#fromCurrency, #convertFromCurrency{
 	margin-left: 20px;
 	width: 100px;
 	font-weight: 600;
 }
-#toCurrency{
+#toCurrency, #convertToCurrency{
 	margin-left: 20px;
 	width: 100px;
 	font-weight: 600;
 }
-
-
-
-
-
-
-
 
 
 
