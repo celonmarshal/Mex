@@ -21,7 +21,7 @@ dateElement.textContent = formattedDate;
 
 // Exchange rates
 const exchangeRates = {
-    "NGN": { "NGN": 1, "GHS": 0.0084},
+    "NGN": { "NGN": 1, "GHS": 0.0085},
     "GHS": { "GHS": 1, "NGN": 109.0}
 };
 
