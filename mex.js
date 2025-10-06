@@ -21,7 +21,7 @@ dateElement.textContent = formattedDate;
 
 // Exchange rates
 const exchangeRates = {
-    "NGN": { "NGN": 1, "GHS": 0.0086},
+    "NGN": { "NGN": 1, "GHS": 0.0087},
     "GHS": { "GHS": 1, "NGN": 105.0}
 };
 
@@ -64,6 +64,7 @@ function calculateAmountToSend() {
     document.getElementById('amountToSend').value = amountToSend.toFixed(2) + ' ' + fromCurrency;
     document.getElementById('calculationDate').innerText = `Calculation performed on: ${getCurrentDate()}`;
 }
+
 
 
 
